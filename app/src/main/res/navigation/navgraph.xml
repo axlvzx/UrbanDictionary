@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/definitionListFragment">
+
+    <fragment
+        android:id="@+id/definitionListFragment"
+        android:name="com.example.urbandicionary.ui.fragment.DefinitionListFragment"
+        android:label="fragment_definition_list"
+        tools:layout="@layout/fragment_definition_list" >
+        <action
+            android:id="@+id/action_definitionListFragment_to_definitionDetailFragment"
+            app:destination="@id/definitionDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/definitionDetailFragment"
+        android:name="com.example.urbandicionary.ui.fragment.DefinitionDetailFragment"
+        android:label="fragment_definition_detail"
+        tools:layout="@layout/fragment_definition_detail" >
+        <action
+            android:id="@+id/action_definitionDetailFragment_to_definitionListFragment2"
+            app:popUpTo="@id/definitionListFragment" />
+        <argument
+            android:name="position"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UrbanDicionary</string>
+    <string name="order_up">Order by thumbs up</string>
+    <string name="order_down">Order by thumbs down</string>
+    <string name="autor">Autor</string>
+    <string name="example">Example</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
